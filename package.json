@@ -1,0 +1,22 @@
+{
+  "name": "test",
+  "description": "",
+  "exports": {
+    ".": {
+      "import": "dist/index.mjs"
+    }
+  },
+  "scripts": {
+    "build": "bash scripts/build.sh"
+  },
+  "packageManager": "yarn@4.1.1",
+  "devDependencies": {
+    "rollup": "4.13.0",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "typescript": "5.4.3"
+  },
+  "engineStrict": true,
+  "engines": {
+    "node": "22.9.0"
+  }
+}

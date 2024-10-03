@@ -1,0 +1,14 @@
+{
+    "extends": "./tsconfig.json",
+    "compilerOptions": {
+        "composite": true,
+        // in ./tsconfig.json: referenced project 'tsconfig.dev.json' may not disable emit
+        "noEmit": false,
+        // `outDir` is only needed for running `tsc -p tsconfig.dev.json` manually
+        "outDir": "out"
+    },
+    "include": [
+        "package.json",
+        "rollup.config.ts"
+    ]
+}
